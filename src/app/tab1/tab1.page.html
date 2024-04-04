@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <ion-content class="ion-padding">
+      <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+        <ion-refresher-content
+          pullingIcon="chevron-down-circle-outline"
+          pullingText="Pull to refresh"
+          refreshingSpinner="circles"
+          refreshingText="Refreshing..."
+        >
+        </ion-refresher-content>
+      </ion-refresher>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" src="https://www.comidaereceitas.com.br/wp-content/uploads/2021/06/espaguete_bolonhesaa-780x430.jpg" />
+        </ion-thumbnail>
+        <ion-label>1. Espaguete</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-thumbnail slot="end">
+          <img alt="Silhouette of mountains" src="https://coolicias.com.br/wp-content/uploads/2023/09/Lasanha-de-carne-moida-com-molho-branco-1024x635-optimized.jpg" />
+        </ion-thumbnail>
+        <ion-label>2. Lasanha</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" src="https://assets.unileversolutions.com/recipes-v2/54317.jpg?im=Resize,height=372;Crop,size=(932,372),gravity=Center" />
+        </ion-thumbnail>
+        <ion-label>3. Nhoque de batata</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-thumbnail slot="end">
+          <img alt="Silhouette of mountains" src="https://conteudo.imguol.com.br/c/entretenimento/be/2022/05/09/carbonara---ronald-1652100428622_v2_900x506.jpg" />
+        </ion-thumbnail>
+        <ion-label>4. Carbonara</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" src="https://s2-oglobo.glbimg.com/0vdubgDan1JOW67cMl2krKV-a_s=/0x0:3568x3568/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/H/L/kRho18SPyam1rwl0z5hQ/side-view-pizza-with-chopped-pepper-board-cookware.jpg" />
+        </ion-thumbnail>
+        <ion-label>5. Pizza</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-thumbnail slot="end">
+          <img alt="Silhouette of mountains" src="https://www.sabornamesa.com.br/media/k2/items/cache/24f13dfd02fd46bd71a7e0abea42e3b3_XL.jpg" />
+        </ion-thumbnail>
+        <ion-label>6. Capeletti</ion-label>
+      </ion-item>
+
+    </ion-content>
+
+</ion-content>
